@@ -1,6 +1,6 @@
 #!/bin/bash
 
-fruits=("apple","kiwi","banana")
+fruits=("apple" "kiwi" "banana")
 
 echo "khani have ${fruits[0]}"
 echo "khani have ${fruits[1]}"
