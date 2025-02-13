@@ -1,15 +1,9 @@
 #!/bin/bash
 
-#number1=$mul1
-#number2=$mul2
-
-#mul=$(($number1 * $number2))
-
-#echo "multiplication of both number =${mul}"
-
 num1=$1
 num2=$2
 
-ans=$(( $num1*$num2 ))
+mul=$(( $num1 * $num2 ))
 
-echo $ans                       
+echo "multiplication of $num1 x $num2 : $mul"
+
