@@ -2,7 +2,7 @@
 m=1
 n=2
 
-if [ $n -eq $m ]
+if [ $n -gt $m ]
 then
         echo "Both variables are the same"
 else
