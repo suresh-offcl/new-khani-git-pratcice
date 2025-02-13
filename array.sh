@@ -1,6 +1,6 @@
 #!/bin/bash
 
-friuits=("apple" "kiwi" "banana")
+fruits=("apple" "kiwi" "banana")
 
 echo "fruit 1 is :: ${fruits[0]} "
 echo "fruit 2 is :: ${fruits[1]} "
