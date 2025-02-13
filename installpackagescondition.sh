@@ -7,20 +7,20 @@ then
     echo "$username dont have root access,pls get access to do anything"
     exit 1
 else
-    dnf list installed git
+    dnf list installed mysql
     if [ $? -eq 0]
     then
-        echo " $username ,git is already installed"
+        echo " $username ,mysql is already installed"
         exit 1
     else
-        dnf install git -y
-        dnf list installed git
+        dnf install mysql -y
+        dnf list installed mysql
         if [ $? -eq 0 ]
         then
-            echo "$username , git is succesfully installed"
+            echo "$username , mysql is succesfully installed"
             exit 1
         else
-            echo "$username , git is not installed , facing problem to install"
+            echo "$username , mysql is not installed , facing problem to install"
             exit 1
         fi
     fi
