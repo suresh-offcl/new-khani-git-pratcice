@@ -1,8 +1,9 @@
 #!/bin/bash
-m=$num1
-n=$num2
 
-if [ $n -gt $m ]
+m=1
+n=2
+
+if [ $n -eq $m ]
 then
         echo "Both variables are the same"
 else
