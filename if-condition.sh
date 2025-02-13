@@ -9,3 +9,5 @@ then
 
 else
     echo "number is less than 20"
+
+fi 
