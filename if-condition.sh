@@ -1,6 +1,6 @@
 #!/bin/bash
 
-number=$1
+number=$abc
 
 if [ $number -gt 20 ]
 then
