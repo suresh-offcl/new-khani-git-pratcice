@@ -7,9 +7,9 @@
 
 #echo "multiplication of both number =${mul}"
 
-num1=$$mul1
-num2=$mul2
+num1=$1
+num2=$2
 
-ans=$((num1*num2))
+ans=$(( $num1*$num2 ))
 
 echo $ans                       
