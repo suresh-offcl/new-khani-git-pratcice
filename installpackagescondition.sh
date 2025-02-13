@@ -1,27 +1,25 @@
 #!/bin/bash
 userid=$( id -u )
-
-if [ $userid -ne 0 ]
+if [ $userid -eq 0 ]
 then
-    echo " dont have root access,pls get access to do anything"
-    exit 1
-else
     dnf list installed mysql
     if [ $? -eq 0 ]
     then
-        echo " mysql is already installed"
+        echo "mysql are already installed"
         exit 1
     else
         dnf install mysql -y
         dnf list installed mysql
         if [ $? -eq 0 ]
-        then
-            echo " mysql is succesfully installed"
+        then 
+            echo "mysql is installed"
             exit 1
         else
-            echo " mysql is not installed , facing problem to install"
+            echo "mysql is not installing facing some issues"
             exit 1
         fi
     fi
 fi
+
+
 
