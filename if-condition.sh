@@ -2,10 +2,10 @@
 
 number=$num
 
-if ($number > 20){
+if [$number > 20]
+then
 
     echo "$number is greater than 20"
 
-}else{
+else
     echo "number is less than 20"
-}
