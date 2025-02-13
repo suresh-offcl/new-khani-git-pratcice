@@ -10,6 +10,6 @@
 num1=$$mul1
 num2=$mul2
 
-ans=$(($num1 * $num2))
+ans=$((num1*num2))
 
-echo $ans
+echo $ans                       
