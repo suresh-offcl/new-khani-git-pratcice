@@ -8,7 +8,7 @@ then
     exit 1
 else
     dnf list installed mysql
-    if [ $? -eq 0]
+    if [ $? -eq 0 ]
     then
         echo " $username ,mysql is already installed"
         exit 1
