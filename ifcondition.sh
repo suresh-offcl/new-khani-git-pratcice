@@ -1,6 +1,6 @@
 #!/bin/bash
-m=1
-n=2
+m=$num1
+n=$num2
 
 if [ $n -gt $m ]
 then
