@@ -1,10 +1,9 @@
 #!/bin/bash
 
-fruits=("apple" "kiwi" "banana")
+friuits=("apple" "kiwi" "banana")
 
-echo "khani have ${fruits[0]}"
-echo "khani have ${fruits[1]}"
-echo "khani have ${fruits[2]}"
+echo "fruit 1 is :: ${fruits[0]} "
+echo "fruit 2 is :: ${fruits[1]} "
+echo "fruit 3 is :: ${fruits[2]} "
 
-echo "khani have ${fruits[@]}"
-
+echo "fruit 4 is :: ${fruits[@]} "
