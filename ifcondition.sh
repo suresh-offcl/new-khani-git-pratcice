@@ -1,6 +1,6 @@
 #!/bin/bash
 
-m=1
+m=2
 n=2
 
 if [ $n -eq $m ]
