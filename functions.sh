@@ -18,13 +18,13 @@ validate () {
 }
 
 check_root
-dnf list installed git
+dnf list installed mysql
 
 if [ $? -ne 0 ]
 then 
-    echo "git is not installed , going to install it..."
-    dnf install git -y
-    validate $? "git"
+    echo "mysql is not installed , going to install it..."
+    dnf install mysql -y
+    validate $? "mysql"
     
 else
     echo "already installed"
