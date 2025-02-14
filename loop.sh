@@ -10,7 +10,6 @@ check_root(){
     fi
 }
 
-check_root
 
 validate () {
     if [ $? -ne 0 ]
@@ -22,7 +21,9 @@ validate () {
     fi
 }
 
-for $package in $@
+check_root
+
+for package in $@
 do 
     dnf list installed $package
     if [ $? -ne 0 ]
