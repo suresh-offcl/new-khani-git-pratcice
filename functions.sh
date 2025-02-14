@@ -27,7 +27,7 @@ then
     validate $? "mysql"
     
 else
-    echo "already installed"
+    echo "mysql, already installed "
 fi
 
 
