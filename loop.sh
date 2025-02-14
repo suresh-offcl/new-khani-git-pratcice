@@ -33,7 +33,6 @@ do
         validate $? "installing $package"
     else
         echo " $package already installed "
-        exit 1
     fi
 
 done
