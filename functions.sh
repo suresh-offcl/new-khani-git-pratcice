@@ -30,4 +30,16 @@ else
     echo "mysql, already installed "
 fi
 
+check_root
+dnf list installed nodejs
 
+if [ $? -ne 0 ]
+then
+    echo " nodejs is not installed,going to install it"
+    dnf module enable nodejs:20
+    dnf install nodejs -y
+
+    validate $? "nodejs"
+else
+    echo "nodejs already installed"
+fi
