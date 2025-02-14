@@ -12,8 +12,10 @@ validate () {
     if [ $? -ne 0 ]
     then 
         echo "facing issues while installing $2 pls check it once"
+        exit 1
     else
         echo "succesfully installed $2"
+        
     fi
 }
 
@@ -40,6 +42,8 @@ then
     dnf install nodejs -y
 
     validate $? "nodejs"
+    
 else
     echo "nodejs already installed"
+    
 fi
