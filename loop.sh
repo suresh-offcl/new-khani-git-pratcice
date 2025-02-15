@@ -2,44 +2,41 @@
 
 userid=$( id -u )
 
-g="/e[31m"
-r="/e[32m"
-n="/e[0m"
-
 check_root () {
-
     if [ $userid -ne 0 ]
     then 
-        echo " $g U dont have root access "
+        echo " you dont have root access  "
         exit 1
     fi
-
 }
 
 validate () {
 
-    if [ $1 -ne 0 ]
+    if[ $? -ne 0 ]
     then 
-        echo "$r $package is not installed facing somr issues $n "
+        echo " $package is not installed , ur facing some issues "
         exit 1
     else
-        echo "$g $package is installed "
-    fi
+        echo " $package is installed "
 
 }
 
 check_root
 
-for package in $@ 
-do
+for package in $@
+do 
     dnf list installed $package
-    if [ $? -eq 0 ]
+    if [ $? -ne 0 ]
     then
-        echo " $package is already $g installed $n "
-
-    else
+        echo " $package is not installed ,trying to install it"
         dnf install $package -y
-        validate $? " installing $package "
+        validate $? "installing $package"
+    else
+        echo " $packa ge is already installed "
+    
+    fi
 
-    fi 
-done 
+
+done
+
+
