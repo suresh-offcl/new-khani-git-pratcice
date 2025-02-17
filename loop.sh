@@ -43,6 +43,7 @@ validate () {
         echo -e "$R $package is not installed, ur facing issues while installing $package $N"
     else
     echo "package is already installed"
+    fi 
 }
 
 
@@ -57,7 +58,7 @@ do
         
     else
     echo -e "$G $package is already installed .nothing to do $N"
-21  
+
     fi 
 done 
 
