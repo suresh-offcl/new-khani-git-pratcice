@@ -1,7 +1,7 @@
 #!/bin/bash
 source_dir=$1
 destination_dir=$2
-days=$(3:-14)
+days=${3:-14}
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
