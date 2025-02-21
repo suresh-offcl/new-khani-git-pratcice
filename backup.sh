@@ -17,12 +17,12 @@ then
     exit1
 fi 
 
-if [! -d $source_dir ]
+if [ ! -d $source_dir ]
 then 
     echo "$source_dir does not exist .. pls check"
 fi 
 
-if [! -d $destination_dir ]
+if [ ! -d $destination_dir ]
 then 
     echo "$destination_dir does not exist .. pls check"
 fi 
