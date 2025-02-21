@@ -34,7 +34,7 @@ echo "files : $files"
 
 if [ ! -z $files ]
 then
-    echo -e " files found  "
+    echo  " files found  "
 else
     echo "no files are older than $days"
 fi
