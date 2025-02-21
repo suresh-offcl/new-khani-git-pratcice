@@ -8,7 +8,7 @@ N="\e[0m"
 Y="\e[33m"
 
 usage () {
-    echo -e "$R usage :: $N  filename <source_folder> <destination_folder> <time-optional>"
+    echo -e "$R usage :: $N sh  filename.extension <source_folder> <destination_folder> <time-optional>"
 }
 
 if [ $# -lt 2 ]
