@@ -29,7 +29,7 @@ fi
 
 
 
-files=$( find /home/ec2-user/logs -name "*.log" -mtime +14 )
+files=$( find $source_dir -name "*.log" -mtime +14 )
 echo "files : $files"
 
 if [ ! -z $files ]
