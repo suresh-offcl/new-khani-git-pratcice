@@ -29,7 +29,7 @@ fi
 
 
 
-files=$( find $source_dir -name "*.log" -mtime +14 )
+files=$( find $source_dir -name "*.log" -mtime +$days )
 echo "files : $files"
 
 if [ ! -z $files ]
