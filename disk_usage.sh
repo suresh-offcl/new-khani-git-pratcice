@@ -10,6 +10,6 @@ do
     PARTITION=$(echo $line | grep xfs | awk -F " " '{print $NF}')
 
     echo "$PARITION"
-    
+    echo "$USAGE"
 done <<< $DISK_USAGE
 
