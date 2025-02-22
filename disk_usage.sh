@@ -6,8 +6,8 @@ SUM=0
 while IFS= read -r line
 do 
     USAGE=$(echo $line | grep xfs | awk -F " " '{print $6F}' | cut -d "%" -f1)
-    SUM=$SUM $USAGE
-    echo "$SUM  "
+    PARITION=$(echo $line | grep xfs | awk -F " " '{PRINT $NF}')
+    echo "$PARITION"
     
 done <<< $DISK_USAGE
 
